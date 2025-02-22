@@ -138,18 +138,6 @@ function formatCurrency(currency) {
 const sortBy = function (type, value) {
     const modifier = type === "inc" ? 1 : -1;
     filteredArray.sort((a, b) => (a[value] - b[value]) * modifier);
-    // switch (type) {
-    //     case "inc": {
-    //         filteredArray.sort((a, b) => a[value] - b[value]);
-    //         break;
-    //     }
-    //     case "dec": {
-    //         filteredArray.sort((a, b) => b[value] - a[value]);
-    //         break;
-    //     }
-    //     default:
-    //         break;
-    // }
 };
 
 // function to handle the sort by market cap functionality
