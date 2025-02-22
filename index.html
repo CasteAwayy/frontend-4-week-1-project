@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="asset/favicon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Frontend 3 Module test project</title>
-  </head>
-  <body>
-    <div class="container">
-      
-      <header class="header">
-        <div class="header-bar">
-          <input
-            class="search_input"
-            type="text"
-            placeholder="Search By Name or Symbol"
-            name="search"
-          />
-          <button id="sortBy-cap" class="btn-srt">Sort By Mkt Cap</button>
-          <button id="sortBy-percentage" class="btn-srt">
-            Sort by percentage
-          </button>
-        </div>
-      </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="asset/favicon.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <title>Frontend 4 Week 1 project</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header-bar">
+                    <input
+                        class="search_input"
+                        type="text"
+                        placeholder="Search By Name or Symbol"
+                        name="search"
+                    />
+                    <button id="sortBy-cap" class="btn-srt">
+                        Sort By Mkt Cap
+                    </button>
+                    <button id="sortBy-percentage" class="btn-srt">
+                        Sort by percentage
+                    </button>
+                </div>
+            </header>
 
-      <p class="no-data-received hidden">
-        Unable to get the data from the API. See console for more information
-      </p>
+            <p class="no-data-received hidden">
+                Unable to get the data from the API. See console for more
+                information
+            </p>
 
-      <main class="main">
-        <table id="table_crypto" class="table_crypto">
-          <tbody id="table_crypto-body">
-            <!-- <tr>
+            <main class="main">
+                <table id="table_crypto" class="table_crypto">
+                    <tbody id="table_crypto-body">
+                        <!-- <tr>
               
             </tr> -->
-          </tbody>
-        </table>
-      </main>
-
-    </div>
-    <script src="script.js"></script>
-  </body>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
