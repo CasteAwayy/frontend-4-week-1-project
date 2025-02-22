@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px  */
+
+  /*        ?colors           */
+  --primary-clr: #ffffff;
+  --primary-background-clr: #1a1a1c;
+  --positive-clr: #59b93c;
+  --negative-clr: #9f2820;
+
+  /*       ?border-values     */
+  --border-width: 0.2rem;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: var(--primary-background-clr);
+}
+
+:is(input, button, textarea) {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--primary-clr);
+  font-size: 2rem;
+  font-weight: 400;
+  border: var(--border-width) solid var(--primary-clr);
+  background-color: transparent;
+}
+
+.container {
+  width: min(120rem, 80%);
+  margin: 0 auto;
+}
+
+.header {
+  margin: 2rem 0;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.search_input {
+  flex: 1;
+  padding: 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search_input::placeholder {
+  color: var(--primary-clr);
+}
+
+.btn-srt {
+  padding: 1rem 1.5rem;
+}
+
+/*                ? main section                              */
+
+.main {
+  font-size: 2rem;
+}
+
+.table_crypto {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#table_crypto-body {
+  color: white;
+}
+
+#table_crypto-body td {
+  border-bottom: 1px solid white;
+  padding: 2rem 0;
+  text-align: right;
+  &:not(:first-child) {
+    justify-content: flex-end;
+  }
+}
+
+#table_crypto-body tr:last-child td {
+  border-bottom: none;
+}
+
+.col-1 {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 1rem;
+}
+
+.col-2 {
+  text-transform: uppercase;
+}
+.logo_img {
+  height: 4rem;
+}
+
+.logo__name {
+  text-transform: capitalize;
+}
+
+.col-4 {
+  margin-right: 3rem;
+}
+
+.col-5.pos {
+  color: var(--positive-clr);
+}
+.col-5.neg {
+  color: var(--negative-clr);
+}
+
+.no-data-received {
+  font-size: 5rem;
+  color: var(--primary-clr);
+  font-weight: 600;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 40%;
+  }
+}
